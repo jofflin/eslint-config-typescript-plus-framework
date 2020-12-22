@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-typescript-plus-framework",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "ESlint for all kind of Projects",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoeffjo/eslint-config-global-projects.git"
+    "url": "git+https://github.com/hoeffjo/eslint-config-typescript-plus-framework.git"
   },
   "author": "Jonas Hoefflin",
   "license": "MIT",
@@ -26,9 +26,9 @@
     "angular"
   ],
   "bugs": {
-    "url": "https://github.com/hoeffjo/eslint-config-global-projects/issues"
+    "url": "https://github.com/hoeffjo/eslint-config-typescript-plus-framework/issues"
   },
-  "homepage": "https://github.com/hoeffjo/eslint-config-global-projects#readme",
+  "homepage": "https://github.com/hoeffjo/eslint-config-typescript-plus-framework#readme",
   "peerDependencies": {
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^6.12.0",

@@ -1,43 +1,43 @@
-# [eslint-config-typescript-plus-framework][website]
+# [eslint-config-typescript-plus-framework][website] (Noch in Arbeit)
 
-English / [German](./README.de.md)
+Deutsch / [English](./README.md)
 
 ---
 
-This ESLint config is a progressive ESLint config for your React/Vue/Angular/TypeScript projects. Inspired by ESlint from alloy.
+Diese ESLint konfiguration ist eine progressive ESLint Konfiguration für deine React/Vue/Angular Projekte mit Typescript. Dieses Repo ist inspiriert von Airbnb und alloy.
 
 ## Quick start
 
-Please choose the following configuration based on the technology stack used by your project:
+Wähle eine der folgenden Konfigurationen aus, passend für deinen Stack:
 
-- [Built-in](#built-in)
+- [Standard](#built-in)
 - [React](#react)
 - [Vue](#vue)
 - [Angular](#angular)
 
-## Philosophy
+## Philosophie
 
-- Let [Prettier][] handle style-related rules
-- Inherit [ESLint's philosophy](https://eslint.org/docs/about/#philosophy) and help everyone build their own rules
-- High degree of automation: advanced rules management, test as a document, as a [website][]
-- Keep up with the times, follow up the latest rules as soon as possible
+- Lass [Prettier][] die style-regelen händeln
+- Verwirkliche die [ESLint's Philosophie](https://eslint.org/docs/about/#philosophy) und hilf den anderen beim erstellen ihrer Regeln
+- Hoher Anteil an Automatisierung: Fortgeschrittenes Regelmanagement
+- Bleib bei der Sache. Aktualisiere immer zum neusten Stand
 
-## Usage
+## Verwendung
 
-### Built-in (Typescript)
+### Standard (Typescript)
 
 ```bash
 npm install --save-dev eslint-config-typescript-plus-framework
 npx install-peerdeps --save-dev eslint-config-typescript-plus-framework
 ```
 
-Create an `.eslintrc.js` in the root directory of your project, then copy the following content into it:
+Erstelle eine `.eslintrc.js` in dem Root-Verzeichnis deines Projektes, dann kopiere den folgenden Inhalt hinein:
 
 ```js
 module.exports = {
   extends: ['typescript-plus-framework'],
   env: {
-    // Your environments (which contains several predefined global variables)
+    // Deine Umgebung (enthält zahlreiche vorgefertigte Variablen)
     //
     // browser: true,
     // node: true,
@@ -46,12 +46,12 @@ module.exports = {
     // jquery: true
   },
   globals: {
-    // Your global variables (setting to false means it's not allowed to be reassigned)
+    // Deine globalen Variablen (false bedeutet, dass die Variable nicht verändert werden darf)
     //
     // myGlobal: false
   },
   rules: {
-    // Customize your rules
+    // Überschreibe regeln und Kreiere neue
   },
 };
 ```
@@ -64,13 +64,13 @@ npx install-peerdeps --save-dev eslint-config-typescript-plus-framework
 npm install --save-dev eslint-plugin-vue vue-eslint-parser
 ```
 
-Create an `.eslintrc.js` in the root directory of your project, then copy the following content into it:
+Erstelle eine `.eslintrc.js` in dem Root-Verzeichnis deines Projektes, dann kopiere den folgenden Inhalt hinein:
 
 ```js
 module.exports = {
   extends: ['typescript-plus-framework', 'typescript-plus-framework/vue'],
   env: {
-    // Your environments (which contains several predefined global variables)
+    // Deine Umgebung (enthält zahlreiche vorgefertigte Variablen)
     //
     // browser: true,
     // node: true,
@@ -79,12 +79,12 @@ module.exports = {
     // jquery: true
   },
   globals: {
-    // Your global variables (setting to false means it's not allowed to be reassigned)
+    // Deine globalen Variablen (false bedeutet, dass die Variable nicht verändert werden darf)
     //
     // myGlobal: false
   },
   rules: {
-    // Customize your rules
+    // Überschreibe regeln und Kreiere neue
   },
 };
 ```
@@ -97,13 +97,13 @@ npx install-peerdeps --save-dev eslint-config-typescript-plus-framework
 npm install --save-dev @angular-eslint/builder @angular-eslint/eslint-plugin
 ```
 
-Create an `.eslintrc.js` in the root directory of your project, then copy the following content into it:
+Erstelle eine `.eslintrc.js` in dem Root-Verzeichnis deines Projektes, dann kopiere den folgenden Inhalt hinein:
 
 ```js
 module.exports = {
   extends: ['typescript-plus-framework', 'typescript-plus-framework/angular'],
   env: {
-    // Your environments (which contains several predefined global variables)
+    // Deine Umgebung (enthält zahlreiche vorgefertigte Variablen)
     //
     // browser: true,
     // node: true,
@@ -112,12 +112,12 @@ module.exports = {
     // jquery: true
   },
   globals: {
-    // Your global variables (setting to false means it's not allowed to be reassigned)
+    // Deine globalen Variablen (false bedeutet, dass die Variable nicht verändert werden darf)
     //
     // myGlobal: false
   },
   rules: {
-    // Customize your rules
+    // Überschreibe regeln und Kreiere neue
   },
 };
 ```
@@ -130,13 +130,13 @@ npx install-peerdeps --save-dev eslint-config-typescript-plus-framework
 npm install --save-dev eslint-plugin-react eslint-plugin-react-hooks eslint-config-airbnb eslint-plugin-jsx-a11y
 ```
 
-Create an `.eslintrc.js` in the root directory of your project, then copy the following content into it:
+Erstelle eine `.eslintrc.js` in dem Root-Verzeichnis deines Projektes, dann kopiere den folgenden Inhalt hinein:
 
 ```js
 module.exports = {
   extends: ['typescript-plus-framework', 'typescript-plus-framework/react'],
   env: {
-    // Your environments (which contains several predefined global variables)
+    // Deine Umgebung (enthält zahlreiche vorgefertigte Variablen)
     //
     // browser: true,
     // node: true,
@@ -145,21 +145,21 @@ module.exports = {
     // jquery: true
   },
   globals: {
-    // Your global variables (setting to false means it's not allowed to be reassigned)
+    // Deine globalen Variablen (false bedeutet, dass die Variable nicht verändert werden darf)
     //
     // myGlobal: false
   },
   rules: {
-    // Customize your rules
+    // Überschreibe regeln und Kreiere neue
   },
 };
 ```
 
 ## Troubleshooting
 
-### With VSCode
+### Mit VSCode
 
-ESLint will not lint `.vue`, `.ts` or `.tsx` files in VSCode by default, you need to set your `.vscode/settings.json` like this:
+ESLint lintet `.vue`, `.ts` or `.tsx` Dateien nicht standardmäsig in VSCode, setze sie in der `.vscode/settings.json` wie folgt:
 
 ```json
 {
@@ -167,9 +167,9 @@ ESLint will not lint `.vue`, `.ts` or `.tsx` files in VSCode by default, you nee
 }
 ```
 
-### Autofix ESLint errors on save
+### Autofix ESLint beim speichern
 
-If you want to enable auto-fix-on-save, you need to set your `.vscode/settings.json` like this:
+Um Auto-Fix-On-Save zu aktivieren, setze das folgende in der `.vscode/settings.json`:
 
 ```json
 {
@@ -180,11 +180,11 @@ If you want to enable auto-fix-on-save, you need to set your `.vscode/settings.j
 }
 ```
 
-### With Prettier
+### Mit Prettier
 
-`eslint-config-typescript-plus-framework` does not include all style-related rules in v3, so there is no need to install `eslint-config-prettier`. Just install `prettier` and related VSCode plugins.
+`eslint-config-typescript-plus-framework` beinhaltet nicht all style-bezogenen regelen. Installiere `prettier` (optional).
 
-Here is a `.prettierrc.js` configuration used for reference only:
+Hier ist eine `.prettierrc.js` Konfiguration als anhaltspunkt:
 
 ```js
 // .prettierrc.js
