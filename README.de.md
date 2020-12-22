@@ -28,7 +28,7 @@ Wähle eine der folgenden Konfigurationen aus, passend für deinen Stack:
 
 ```bash
 npm install --save-dev eslint-config-typescript-plus-framework
-npx install-peerdeps --save-dev eslint-config-typescript-plus-framework
+npx install-peerdeps --dev eslint-config-typescript-plus-framework
 ```
 
 Erstelle eine `.eslintrc.js` in dem Root-Verzeichnis deines Projektes, dann kopiere den folgenden Inhalt hinein:
@@ -60,7 +60,7 @@ module.exports = {
 
 ```bash
 npm install --save-dev eslint-config-typescript-plus-framework
-npx install-peerdeps --save-dev eslint-config-typescript-plus-framework
+npx install-peerdeps --dev eslint-config-typescript-plus-framework
 npm install --save-dev eslint-plugin-vue vue-eslint-parser
 ```
 
@@ -93,7 +93,7 @@ module.exports = {
 
 ```bash
 npm install --save-dev eslint-config-typescript-plus-framework
-npx install-peerdeps --save-dev eslint-config-typescript-plus-framework
+npx install-peerdeps --dev eslint-config-typescript-plus-framework
 npm install --save-dev @angular-eslint/builder @angular-eslint/eslint-plugin
 ```
 
@@ -126,7 +126,7 @@ module.exports = {
 
 ```bash
 npm install --save-dev eslint-config-typescript-plus-framework
-npx install-peerdeps --save-dev eslint-config-typescript-plus-framework
+npx install-peerdeps --dev eslint-config-typescript-plus-framework
 npm install --save-dev eslint-plugin-react eslint-plugin-react-hooks eslint-config-airbnb eslint-plugin-jsx-a11y
 ```
 
